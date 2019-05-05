@@ -1,11 +1,12 @@
 body, html {
   height: 100%;
+  background-image: url("./img/bground.JPG");
 }
 /* grid layout for entire page */
 .grid {
   display: grid;
   grid-template-columns: 425px auto 425px;
-  grid-template-rows: 250px auto auto auto;
+  grid-template-rows: 80px auto auto auto;
   grid-gap: 1em;
 }
 
@@ -14,6 +15,7 @@ header {
   grid-row-end: 1;
   grid-column-start: 1;
   grid-column-end: 4;
+  height: 80px;
 }
 
 .sidebar-left {
@@ -49,14 +51,19 @@ below {
   display: grid;
   grid-template-columns: 150px auto 150px;
   grid-template-rows: repeat(1, 60px);
-  background-color: #333;
+  background-color: rgb(91, 94, 99, 0.7);
+
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   left: 0;
   width: 100%; /* Full width */
-  padding-bottom: 12px;
-  padding-top: 12px;
+  height: 100px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 12px;
+  border-radius: 3px;
+  
 }
 
 .navbar-portal {
@@ -77,19 +84,14 @@ below {
 /* style navbar */
 #link {
   font-size: 35px;
+  font-family: 'Porsche';
+  text-align: center;
+  padding-top: 18px;
 }
-
 /* style titles */
-#left {
+#sub {
   font-size: 30px;
-}
-
-#right {
-  font-size: 30px;
-}
-
-#article {
-  font-size: 32px;
+  font-family: 'raleway';
 }
 
 .stockgraph {
@@ -100,4 +102,15 @@ below {
 
 .right-widget {
   left: -40%;
+}
+
+/*fonts */
+@font-face {
+  font-family: Porsche;
+  src: url("fonts/911porschav33d.ttf");
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("fonts/Raleway-ExtraLight.ttf");
 }
