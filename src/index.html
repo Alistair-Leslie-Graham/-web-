@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <link href = 'https://fonts.googleapis.com/css?family=Play:400,700' 
+         rel = 'stylesheet' type = 'text/css'>
+      <link rel = "stylesheet" href = "assets/css/style.css" type = 'text/css'>
+      <link rel = "stylesheet" href = "src/blockrain.css" type = 'text/css'>
+	  <link rel = "stylesheet" href = "index.css" type = 'text/css'>
+   <body>
+   	  <section id=navbar> 
+   	  	<div class="grid">
+   	  		<header>
+   	  			<div class="navbar-grid">
+   	  				<aside class="navbar-portal" id="link">Chrypto Portal</aside>
+      				<aside class="navbar-stockwidget" id="link">
+      				</aside>
+      				<aside class="navbar-tetris" id="link"></aside>
+      			</div>
+      		</header>
+      		<aside class="sidebar-left">
+      			<h id="left">Twitter</h>
+      		</aside>
+      		<article>
+      			<h id="article">BTC Price</h>
+      		</article>
+      		<aside class="sidebar-right">
+      			<div class="right-widget">
+	      			<h id="right">Technical Analysis</h>
+	     				<!-- TradingView Widget BEGIN -->
+						<div class="tradingview-widget-container">
+						  <div class="tradingview-widget-container__widget"></div>
+						  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX:BTCUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for BTCUSD</span></a> by TradingView</div>
+						  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+						  {
+						  "showIntervalTabs": true,
+						  "width": 425,
+						  "colorTheme": "dark",
+						  "isTransparent": true,
+						  "locale": "en",
+						  "symbol": "BITFINEX:BTCUSD",
+						  "interval": "1m",
+						  "height": 450
+						}
+						  </script>
+						</div>
+						<!-- TradingView Widget END -->
+				</div>
+      		</aside>
+      		<footer>
+      			<div class="stockgraph">
+
+					<!-- TradingView Widget BEGIN -->
+					<div class="tradingview-widget-container">
+					  <div id="analytics-platform"></div>
+					  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+					  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+					  <script type="text/javascript">
+					  new TradingView.widget(
+					  {
+					  "container_id": "analytics-platform",
+					  "width": 998,
+					  "height": 610,
+					  "symbol": "NASDAQ:AAPL",
+					  "interval": "D",
+					  "timezone": "exchange",
+					  "theme": "dark",
+					  "style": "0",
+					  "toolbar_bg": "#f1f3f6",
+					  "withdateranges": true,
+					  "allow_symbol_change": true,
+					  "save_image": false,
+					  "details": true,
+					  "hotlist": true,
+					  "calendar": true,
+					  "news": [
+					    "headlines"
+					  ],
+					  "locale": "en"
+					}
+					  );
+					  </script>
+					</div>
+					<!-- TradingView Widget END -->
+				</div>
+      		</footer>
+      		<below>
+      			<h id = "tetris">Tetris</h>
+      		</below>
+      	</div>
+      </section>
+      
+
+   </body>
+</html>
