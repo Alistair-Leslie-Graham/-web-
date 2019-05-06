@@ -10,47 +10,22 @@
    	  		<header>
    	  			<div class="navbar-grid">
    	  				<aside class="navbar-portal" id="link">Chrypto Portal</aside>
-      				<aside class="navbar-stockwidget" id="link">
-      				</aside>
-      				<aside class="navbar-tetris" id="link"></aside>
+      				<aside class="navbar-login" id="log">
+      					<form action="LoginServlet" method="post">
+      						Username: <input type="text" name="username" style="padding-top: 4px;" placeholder="enter username..." /><br/><br/>
+      						Password: <input type="password" name="userpass" style="padding-top: 4px;" placeholder="enter password..."/><br/><br/>  
+							<button type="submit" value="login">Submit</button>
+      			    </aside>
+      				<aside class="navbar-logout" id="link">Logout</aside>
       			</div>
       		</header>
-      		<aside class="sidebar-left">
-      			<h1 id="sub">Twitter</h1>
-      		</aside>
+      		
       		<article>
       			<h2 id="sub">BTC Price</h2>
-      		</article>
-      		<aside class="sidebar-right">
-      			<div class="right-widget">
-	      			<h3 id="sub">Technical Analysis</h3>
-	     				<!-- TradingView Widget BEGIN -->
-						<div class="tradingview-widget-container">
-						  <div class="tradingview-widget-container__widget"></div>
-						  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX:BTCUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for BTCUSD</span></a> by TradingView</div>
-						  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-						  {
-						  "showIntervalTabs": true,
-						  "width": 425,
-						  "colorTheme": "dark",
-						  "isTransparent": true,
-						  "locale": "en",
-						  "symbol": "BITFINEX:BTCUSD",
-						  "interval": "1m",
-						  "height": 450
-						}
-						  </script>
-						</div>
-						<!-- TradingView Widget END -->
-				</div>
-      		</aside>
-      		<footer>
-      			<div class="stockgraph">
-
-					<!-- TradingView Widget BEGIN -->
-					<div class="tradingview-widget-container">
+      			<!-- TradingView Widget BEGIN -->
+					<div class="tradingview-widget-container" style="padding-left: 0">
 					  <div id="analytics-platform"></div>
-					  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+					  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX:BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
 					  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 					  <script type="text/javascript">
 					  new TradingView.widget(
@@ -58,7 +33,7 @@
 					  "container_id": "analytics-platform",
 					  "width": 998,
 					  "height": 610,
-					  "symbol": "NASDAQ:AAPL",
+					  "symbol": "BITFINEX:BTCUSD",
 					  "interval": "D",
 					  "timezone": "exchange",
 					  "theme": "dark",
@@ -79,10 +54,38 @@
 					  </script>
 					</div>
 					<!-- TradingView Widget END -->
+      		</article>
+      		<aside class="sidebar-right">
+      				<h3 id="sub">Technical Analysis</h3>
+      			<div class="right-widget" style="width: 425;">
+	     			<!-- TradingView Widget BEGIN -->
+					<div class="tradingview-widget-container">
+					  <div class="tradingview-widget-container__widget"></div>
+					  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BITFINEX-BTCUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text">Technical Analysis for BTCUSD</span></a> by TradingView</div>
+					  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+					  {
+					  "showIntervalTabs": true,
+					  "width": 425,
+					  "colorTheme": "dark",
+					  "isTransparent": true,
+					  "locale": "en",
+					  "symbol": "BITFINEX:BTCUSD",
+					  "interval": "1m",
+					  "height": 610
+					}
+					  </script>
+					</div>
+					<!-- TradingView Widget END -->
 				</div>
+      		</aside>
+      		<footer>
+      			
       		</footer>
       		<below>
-      			<h4 id = "sub">Tetris</h4>
+      			<div class='tetris'>
+      				<h4 id = "sub">Tetris</h4>
+      			</div>
+
       		</below>
       	</div>
       </section>
