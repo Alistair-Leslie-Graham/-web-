@@ -1,5 +1,7 @@
 var express = require("express");
+var mysql = require('mysql');
 var app = express();
+
 // set port
 var port = process.env.PORT || 8080;
 

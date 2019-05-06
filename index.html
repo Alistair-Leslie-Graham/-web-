@@ -15,8 +15,13 @@
       						Username: <input type="text" name="username" style="padding-top: 4px;" placeholder="enter username..." /><br/><br/>
       						Password: <input type="password" name="userpass" style="padding-top: 4px;" placeholder="enter password..."/><br/><br/>  
 							<button type="submit" value="login">Submit</button>
+						</form>
       			    </aside>
-      				<aside class="navbar-logout" id="link">Logout</aside>
+      				<aside class="navbar-logout" id="out">
+      					<form action="LogoutServlet" method="post">
+      						<button type="submit" value="logout">Logout</button>
+      					</form>
+      				</aside>
       			</div>
       		</header>
       		
