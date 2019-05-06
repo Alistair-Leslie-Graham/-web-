@@ -1,0 +1,111 @@
+body, html {
+  height: 100%;
+  background-image: url("./img/bground.JPG");
+}
+/* grid layout for entire page */
+.grid {
+  display: grid;
+  grid-template-columns: 425px auto 425px;
+  grid-template-rows: 250px auto auto auto;
+  grid-gap: 1em;
+}
+
+header {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.sidebar-left {
+  grid-row: 2;
+  grid-column: 1/2;
+}
+
+article {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+
+.sidebar-right {
+  grid-row: 2;
+  grid-column: 3/4;
+}
+
+footer {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+}
+
+below {
+  grid-row: 4;
+  grid-column: 1/4;
+}
+
+/* grid layout navbar */
+.navbar-grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(1, 60px);
+  background-color: #333;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%; /* Full width */
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.navbar-portal {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.navbar-stockticker {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.navbar-tetris {
+  grid-row: 1;
+  grid-column: 3/4;
+}
+
+/* style navbar */
+#link {
+  font-size: 35px;
+  font-family: 'Gugi';
+}
+
+/* style titles */
+#left {
+  font-size: 30px;
+}
+
+#right {
+  font-size: 30px;
+}
+
+#article {
+  font-size: 32px;
+}
+
+.stockgraph {
+  display: grid;
+  left: 0;
+  width: 100%; /* Full width */
+}
+
+.right-widget {
+  left: -40%;
+}
+
+/*fonts */
+@font-face {
+  font-family: Gugi;
+  src: url("/fonts/Gugi-Regular.ttf");
+}
