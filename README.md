@@ -1,9 +1,11 @@
-# positive-endolphins
-first node.js web-app heroku
+# website: www.wie-crisp.ml
+
+first node.js web-app + deployed to heroku
 
 - heroku
 - node.js
 - bootstrap
-- raleway font and awesome font for logos
-- gulp
 - npm
+
+- tetris: blockrain
+- 
